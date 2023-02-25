@@ -1,5 +1,5 @@
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React, { useState } from "react";
-import { StatusBar } from "expo-status-bar";
 import {
   ScrollView,
   TouchableOpacity,
@@ -7,10 +7,6 @@ import {
   KeyboardAvoidingView,
   Image,
 } from "react-native";
-import { supabaseClient as supabase } from "@/utils/supabase";
-import { AuthStackParamList } from "@/type/navigation";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-
 import {
   Layout,
   Text,
@@ -19,6 +15,9 @@ import {
   useTheme,
   themeColor,
 } from "react-native-rapi-ui";
+
+import { AuthStackParamList } from "@/types/navigation";
+import { supabaseClient as supabase } from "@/utils/supabase";
 
 export default function Login({
   navigation,
@@ -31,8 +30,8 @@ export default function Login({
   async function login() {
     setLoading(true);
     const { data, error } = await supabase.auth.signInWithPassword({
-      email: email,
-      password: password,
+      email,
+      password,
     });
     if (!error && !data.user) {
       setLoading(false);
@@ -106,7 +105,7 @@ export default function Login({
               autoCapitalize="none"
               autoCompleteType="off"
               autoCorrect={false}
-              secureTextEntry={true}
+              secureTextEntry
               onChangeText={(text) => setPassword(text)}
             />
             <Button
@@ -173,6 +172,7 @@ export default function Login({
             >
               <TouchableOpacity
                 onPress={() => {
+                  // eslint-disable-next-line no-unused-expressions
                   isDarkmode ? setTheme("light") : setTheme("dark");
                 }}
               >

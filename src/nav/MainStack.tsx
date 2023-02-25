@@ -1,10 +1,12 @@
-import SecondScreen from "@/screens/SecondScreen"
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import MainTabs from "./MainTabs"
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-const MainStack = createNativeStackNavigator()
+import MainTabs from "./MainTabs";
 
-export default function Main () {
+import SecondScreen from "@/screens/SecondScreen";
+
+const MainStack = createNativeStackNavigator();
+
+export default function Main() {
   return (
     <MainStack.Navigator
       screenOptions={{
@@ -14,5 +16,5 @@ export default function Main () {
       <MainStack.Screen name="MainTabs" component={MainTabs} />
       <MainStack.Screen name="SecondScreen" component={SecondScreen} />
     </MainStack.Navigator>
-  )
+  );
 }

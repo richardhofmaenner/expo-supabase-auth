@@ -9,8 +9,8 @@
       "@/nav/*": ["nav/*"],
       "@/providers/*": ["providers/*"],
       "@/screens/*": ["screens/*"],
-      "@/type/*": ["types/*"],
-      "@/utils/*": ["src/utils/*"]
+      "@/types/*": ["types/*"],
+      "@/utils/*": ["utils/*"]
     }
   }
 }

@@ -1,8 +1,7 @@
+import { Ionicons } from "@expo/vector-icons";
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from "react";
 import { View, Linking } from "react-native";
-import { MainStackParamList } from "../types/navigation";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { supabaseClient as supabase } from "../utils/supabase";
 import {
   Layout,
   Button,
@@ -13,7 +12,9 @@ import {
   useTheme,
   themeColor,
 } from "react-native-rapi-ui";
-import { Ionicons } from "@expo/vector-icons";
+
+import { MainStackParamList } from "../types/navigation";
+import { supabaseClient as supabase } from "../utils/supabase";
 
 export default function ({
   navigation,

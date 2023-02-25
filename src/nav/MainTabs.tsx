@@ -1,13 +1,13 @@
-import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
+import React from "react";
 import { themeColor, useTheme } from "react-native-rapi-ui";
+
 import TabBarIcon from "../components/utils/TabBarIcon";
 import TabBarText from "../components/utils/TabBarText";
-
-import Home from "@/screens/Home";
 import About from "../screens/About";
 import Profile from "../screens/Profile";
+
+import Home from "@/screens/Home";
 
 const Tabs = createBottomTabNavigator();
 const MainTabs = () => {
@@ -31,7 +31,7 @@ const MainTabs = () => {
             <TabBarText focused={focused} title="Home" />
           ),
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} icon={"md-home"} />
+            <TabBarIcon focused={focused} icon="md-home" />
           ),
         }}
       />
@@ -43,7 +43,7 @@ const MainTabs = () => {
             <TabBarText focused={focused} title="Profile" />
           ),
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} icon={"person"} />
+            <TabBarIcon focused={focused} icon="person" />
           ),
         }}
       />
@@ -55,7 +55,7 @@ const MainTabs = () => {
             <TabBarText focused={focused} title="About" />
           ),
           tabBarIcon: ({ focused }) => (
-            <TabBarIcon focused={focused} icon={"ios-information-circle"} />
+            <TabBarIcon focused={focused} icon="ios-information-circle" />
           ),
         }}
       />

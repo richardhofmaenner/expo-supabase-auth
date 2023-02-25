@@ -1,7 +1,7 @@
+import { Ionicons } from "@expo/vector-icons";
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from "react";
 import { View } from "react-native";
-import { MainStackParamList } from "../types/navigation";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import {
   Layout,
   TopNav,
@@ -9,7 +9,8 @@ import {
   themeColor,
   useTheme,
 } from "react-native-rapi-ui";
-import { Ionicons } from "@expo/vector-icons";
+
+import { MainStackParamList } from "../types/navigation";
 
 export default function ({
   navigation,
