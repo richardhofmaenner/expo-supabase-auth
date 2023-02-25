@@ -1,9 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { ThemeProvider } from 'react-native-rapi-ui';
-import Navigation from '@/nav/Navigation';
-import { AuthProvider } from '@/providers/AuthProvider';
-import Home from '@/screens/Home';
+import { StatusBar } from "expo-status-bar";
+import { ThemeProvider } from "react-native-rapi-ui";
+
+import Navigation from "@/nav/Navigation";
+import { AuthProvider } from "@/providers/AuthProvider";
 
 export default function App() {
   return (
