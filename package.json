@@ -9,7 +9,6 @@
   "author": "Richard Hofmänner <hello@terillos.dev>",
   "license": "MIT",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start:expo": "expo start --tunnel",
     "start:supabase": "supabase start && ngrok http 54321",
