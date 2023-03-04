@@ -1,6 +1,6 @@
 # Expo Supabase Auth
 
-This is a template for using [Supabase](https://supabase.io) with [Expo](https://expo.io) built with [React Native Rapi UI](https://rapi-ui.kikiding.space/).
+This is a template for using [Supabase](https://supabase.io) with [Expo SDK 48](https://expo.io) built with [React Native Rapi UI](https://rapi-ui.kikiding.space/). This repo uses the Supabase V2 Client
 
 ## Requirements
 
@@ -20,3 +20,7 @@ This is a template for using [Supabase](https://supabase.io) with [Expo](https:/
 ## Deploying
 
 When you are ready to deply the app, please modify the supabase url and supbase key in `src/utils/supabase.ts` to your own.
+
+## Thank you
+
+This template is based on the [React Native Expo Template Repo](https://github.com/codingki/react-native-expo-template)`/template-typescript-bottom-tabs-supabase-auth-flow` and updated to use the supabase v2 client and the Expo SDK 48.
