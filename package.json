@@ -1,5 +1,5 @@
 {
-  "name": "@richardhofmaenner/template-expo-supabase-auth",
+  "name": "@richardhofmaenner/template-expo-supabase",
   "description": "Template for a React Native app with Expo and Supabase Auth",
   "keywords": ["expo", "expo template", "supabase", "supabase auth"],
   "repository": {
@@ -9,7 +9,6 @@
   "author": "Richard Hofmänner <hello@terillos.dev>",
   "license": "MIT",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start:expo": "expo start --tunnel",
     "start:supabase": "supabase start && ngrok http 54321",
@@ -27,7 +26,7 @@
     "@supabase/supabase-js": "^2.8.0",
     "@types/react": "~18.0.27",
     "@types/react-native": "~0.70.6",
-    "expo": "^48.0.",
+    "expo": "^48.0.0",
     "expo-asset": "~8.9.0",
     "expo-constants": "~14.2.1",
     "expo-font": "~11.1.1",
