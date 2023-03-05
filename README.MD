@@ -12,10 +12,9 @@ This is a template for using [Supabase](https://supabase.io) with [Expo SDK 48](
 
 ## Getting Started
 
-1. Clone this repo
-2. Run `yarn` to install dependencies
-3. Run `yarn start:expo` to start the expo dev server
-4. Run `yarn start:supabase` to start the supabase dev server
+1. Create a new expo project `yarn create expo-app --template @richardhofmaenner/template-expo-supabase <your-project-name>`
+2. Run `yarn start:expo` to start the expo dev server
+3. Run `yarn start:supabase` to start the supabase dev server
 
 ## Deploying
 
