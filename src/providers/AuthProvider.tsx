@@ -25,7 +25,6 @@ const AuthProvider = (props: Props) => {
       setUser(!!session);
       const { data: authListener } = supabase.auth.onAuthStateChange(
         async (event, session) => {
-          console.log(`Supabase auth event: ${event}`);
           setSession(session);
           setUser(!!session);
         }
