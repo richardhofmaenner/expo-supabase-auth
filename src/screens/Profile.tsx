@@ -1,24 +1,25 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import React from "react";
-import { View } from "react-native";
-import { Layout, Text } from "react-native-rapi-ui";
+import { ScrollView, View } from "react-native";
+import { Layout, Text, TextInput } from "react-native-rapi-ui";
 
 import { MainStackParamList } from "../types/navigation";
+import ChangePassword from "@/components/profile/ChangePassword";
 
 export default function ({
   navigation,
 }: NativeStackScreenProps<MainStackParamList, "MainTabs">) {
   return (
     <Layout>
-      <View
+      <ScrollView
         style={{
           flex: 1,
-          alignItems: "center",
-          justifyContent: "center",
+          marginHorizontal: 20,
+          marginVertical: 40,
         }}
       >
-        <Text>This is the Profile tab</Text>
-      </View>
+        <ChangePassword />
+      </ScrollView>
     </Layout>
   );
 }
