@@ -2,6 +2,7 @@ import { useState } from "react"
 import { View } from "react-native"
 import { Text, TextInput } from "react-native-rapi-ui"
 import PasswordInput from "@/components/inputs/PasswordInput"
+import Spacer from "@/components/layout/Spacer"
 
 const ChangePassword = () => {
 
@@ -22,6 +23,7 @@ const ChangePassword = () => {
           placeholder="Current password"
         />
       </View>
+      <Spacer size="M" />
       <View>
         <PasswordInput 
           value={newPassword}

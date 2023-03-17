@@ -6,7 +6,7 @@ import Constants from "expo-constants";
 
 // Better put your these secret keys in .env file
 export const supabaseClient = createClient(
-  "https://c237-85-195-229-16.eu.ngrok.io/",
+  "https://528d-85-195-229-16.eu.ngrok.io/",
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0",
   {
     auth: {
